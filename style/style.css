@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    color: var(--whitney);
+}
+:root {
+    --redish: #be3144;
+    --lightgreyish: #303841;
+    --darkgreyish: #232325;
+    --skybluwish: #45567d;
+    --whitney: #f0f0f0;
+}
+a{
+    color: var(--whitney);
+    text-decoration: none;
+}
+#welcome-section > h1{
+    font-size: 2.5em;
+}
+#welcome-section > p{
+    color: var(--redish);
+    font-style:italic;
+    margin: 10px;
+    font-size: 1.5em;
+}
+header#header {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 0.1px #0a0a0a;
+    width: 100%;
+    background-color: var(--redish);
+}
+nav#navcontainer{
+    width: 280px;
+}
+nav#navcontainer ul{
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    list-style-type: none;
+}
+#navcontainer>ul a{
+    /*Note I could have remove 'display:block' and 'padding: 30px 10px' 
+    and just replace it with 'padding: 30px 10px' at the ul li, but no, 
+    I will need the whole height of the link to be covered when i hover over it*/
+    display: block;
+    padding: 25px 20px;
+}
+#navcontainer>ul a:hover{
+    background-color: var(--skybluwish);
+}
+section#welcome-section{
+    margin-top: 72px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--darkgreyish);
+    text-align: center;
+    padding-top: 180px;
+    background-image: linear-gradient(80deg, var(--lightgreyish), var(--darkgreyish));
+}
+section#projects{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background-color: var(--skybluwish);
+}
+h2{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8em;
+}
+section#projects>hr{
+    width: 99%;
+    margin: auto;
+    color: var(--whitney);
+    border: 1px solid var(--whitney);
+}
+section#projects>#row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+div.project-tile{
+    margin: 30px 10px;
+    background-color: var(--lightgreyish);
+    box-shadow: 2px 2px 2px 0.1px var(--darkgreyish);
+    flex: 90%;
+    width: 90%;
+}
+div.project-tile>div{   
+    text-align: center;
+    padding: 30px;
+}
+div.project-tile span{
+    visibility: hidden;
+    color: var(--redish);
+    transition: visibility 1s ease;  /*not working*/
+}
+div.project-tile:hover span{
+    visibility: visible;
+}
+div#btn{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+div#btn a{
+    padding: 15px;
+    background-color: var(--lightgreyish)
+}
+div#btn a:hover{
+    transition: background-color 1s;
+    background-color: var(--redish);
+}
+section#navbar-container{
+    background-color: var(--lightgreyish);
+    padding: 100px 5px;
+}
+section#navbar-container #navbar{
+    width: 100%;
+    margin-top: 20px;
+}
+nav#navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+a.contactlink{
+    padding: 15px 20px;
+    font-size: 1.2em;
+    text-shadow: 2.5px 2.5px #0a0a0a;
+    transition: transform 0.5s;     /*not working*/
+}
+a.contactlink:hover{
+    transform: translateY(10px);
+}
+div#linethrough{
+    height: 5px;
+    background-color: var(--redish);
+}
+footer#footer{
+    padding: 30px 20px;
+    background-color: var(--lightgreyish);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+footer#footer >p{
+    padding: 30px 10px;
+    font-size: 0.9em;
+    text-align: center;
+    flex: 100%;
+    width: 100%;
+}
+@media only screen and (min-width: 458px){
+    header#header{
+        padding-right: 25px;
+        justify-content: flex-end;
+    }
+    h2.h1{
+        font-size: 2.9em;
+    }
+    footer#footer p{
+        padding-top: 0px;
+        text-align: left;
+    }
+    footer#footer p:first-child{
+        flex: 68%;
+        width: 68%;
+    }
+    footer#footer p:last-child{
+        flex: 32%;
+        width: 32%;
+    }
+}
+@media only screen and (min-width: 768px){
+    hr{max-width: 80%;}    
+    div.project-tile{
+        flex: 35%;
+        margin: 20px;
+    }
+}
+@media only screen and (min-width: 992px){
+    hr{max-width: 40%;}    
+    div.project-tile{
+        flex: 28%;
+        margin: 20px;
+    }
+}

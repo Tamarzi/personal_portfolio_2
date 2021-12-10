@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>A simple portfolio site with html5 and CSS3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a portfolio site">
+        <meta http-equiv="refresh" content="5400">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <style></style>
+    </head>
+    <body>
+        <header id="header">
+            <nav id="navcontainer">
+                <ul>
+                    <li><a href="#welcome-section" class="navlink">About</a></li>
+                    <li><a href="#projects" class="navlink">Work</a></li>
+                    <li><a href="#navbar-container" class="navlink">Contact</a></li>
+                </ul>
+            </nav>           
+        </header>
+        <section id="welcome-section">
+            <h1>Hey I am Tamarzi</h1>
+            <p>a web developer</p>
+        </section>
+        <section id="projects">
+            <h2>These are some of my projects</h2>
+            <hr></hr>
+            <div id="row">
+                <div class="project-tile">
+                    <img src="./assets/tribute.jpg" alt="tribute_page" style="width:100%; height:250px">
+                    <div><a><span>&lt</span>Tribute Page<span>/&gt</span></a></div>
+                </div>
+                <div class="project-tile">
+                    <img src="./assets/random-quote-machine.png" alt="random_quote_machine" style="width:100%; height:250px">
+                    <div><a><span>&lt</span>Random Quote Machine<span>/&gt</span></a></div>
+                </div>
+                <div class="project-tile">
+                    <img src="./assets/calc.png" alt="Calculator" style="width:100%; height:250px">
+                    <div><a><span>&lt</span>Javascript Calculator<span>/&gt</span></a></div>
+                </div>
+                <div class="project-tile">
+                    <img src="./assets/map.jpg" alt="Map" style="width:100%; height:250px">
+                    <div><a><span>&lt</span>Map<span>/&gt</span></a></div>
+                </div>
+                <div class="project-tile">
+                    <img src="./assets/wiki.png" alt="Wiki" style="width:100%; height:250px; background-color: var(--lightgreyish);">
+                    <div><a><span>&lt</span>Wiki<span>/&gt</span></a></div>
+                </div>
+                <div class="project-tile">
+                    <img src="./assets/tic-tac-toe.png" alt="tic-tac-toe" style="width:100%; height:250px; background-color: var(--lightgreyish);">
+                    <div><a><span>&lt</span>Tic-tac-toe<span>/&gt</span></a></div>
+                </div>
+            </div>
+            <div id="btn"><a href="#">Show all</a></div>   
+        </section>
+        <section id="navbar-container">
+            <h2 class="h1">Let's work together...</h2>
+            <p style="text-align: center; font-style:italic">How do you take coffee?</p>
+            <nav id="navbar">
+                <a href="https://www.facebook.com/tamarzi" class="contactlink" target="_blank"><i class="fas fa-facebook-square"></i>Facebook</a>
+                <a href="https://www.github.com/tamarzi" id="profile-link" class="contactlink" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                <a href="https://www.twitter.com" class="contactlink" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="mailto:tamarzi@yopmail.com" class="contactlink" target="_blank"><i class="fab fa-at"></i>Send a Mail</a>
+                <a href="tel:08037014954" class="contactlink" target="_blank"><i class="fab fa-mobile-alt"></i>Call me</a>
+            </nav>           
+        </section>
+        <div id="linethrough"></div>
+        <footer id="footer">
+            <p>**This is just a fake portfolio. All the projects and contact details given are not real</p>
+            <p><span>&#169</span> Created for freecodecamp<i class="fas fa-free-code-camp"></i></p>
+        </footer>
+    </body>
+</html>
